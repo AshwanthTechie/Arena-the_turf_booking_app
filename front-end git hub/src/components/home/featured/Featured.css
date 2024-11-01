@@ -1,0 +1,44 @@
+/* Existing styles for .box and img */
+.featured .box {
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  border-radius: 6px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.featured img {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+}
+
+/* New CSS class for responsive featured services */
+.responsive-featured {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.responsive-featured .box {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .responsive-featured .box {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-featured .box {
+    flex: 1 1 100%;
+  }
+}
+
+/* Ensure images within responsive featured adjust properly */
+.responsive-featured img {
+  width: 50px;
+  height: 50px;
+}

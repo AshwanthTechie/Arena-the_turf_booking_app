@@ -1,0 +1,215 @@
+/* Common Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-line {
+  border-left: 2px solid #fff;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.step-logo-bg {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.step-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Container for the form */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+
+/* Form Styling */
+.form-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.form-textfield {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+/* Intro Section */
+.intro1 {
+  margin: -10px 0;
+  padding: 50px 0;
+  background-color: #ee1714;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.intro1 h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.intro1 .step-logo-bg {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro1 h4 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.intro1 p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.intro1 .fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Button Styling */
+.btn-custom {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ee1714;
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+  color: #fff;
+  background-image: none;
+  background-color: #ee1714;
+}
+
+/* Additional CSS for centering the submit button */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+  .form-container {
+    padding: 3rem;
+  }
+
+  .form-box {
+    padding: 3rem;
+  }
+
+  .form-textfield {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/* Banner Section */
+.turfformbanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background-image: url('https://www.playspots.in/wp-content/themes/playspots/assets/images/partner-page/partner-with-us-cover.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 25px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+/* Lets Talk Section */
+.lets-talk {
+  padding: 10% 0 8%;
+  text-align: center;
+  background-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,w_3840,h_2160,x_0,y_0/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/images%2FvoltaxMediaLibrary%2Fmmsport%2Fsport-kicks%2F01gjcr46v97q0zwwdkxp.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.journey-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.journey-image {
+  width: 100%;
+  height: auto;
+}
+
+.journey-heading {
+  font-family: 'Roboto', sans-serif;
+  color: #d32f2f; 
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.journey-subheading {
+  font-family: 'Playfair Display', serif;
+  color: #333; 
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.journey-description {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  margin-top: 20px;
+}
+
+.highlight-red {
+  color: #d32f2f;
+}
+
+.highlight-black {
+  color: black; 
+}

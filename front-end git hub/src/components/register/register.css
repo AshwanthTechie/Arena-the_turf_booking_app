@@ -1,0 +1,67 @@
+/* Ensure the body takes full height and centers content */
+.RegisterBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f4f4f4; /* Light background color for contrast */
+}
+
+/* Style for the registration form container */
+.register {
+    color: #333; /* Darker text for better readability */
+    border-radius: 10px; /* Larger border radius for a softer look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+    width: 100%;
+    max-width: 500px; /* Increased maximum width */
+    padding: 2rem; /* Added padding for better spacing */
+    background: #fff; /* White background for the form */
+    backdrop-filter: blur(10px); /* Slight blur for a modern effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .register {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Style for form headings */
+.register h3 {
+    font-size: 1.5rem; /* Larger font size for headings */
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+/* Center text for h6 element */
+h6 {
+    text-align: center;
+    color: #007bff; /* Blue color for the link text */
+    font-size: 0.875rem; /* Slightly smaller font size */
+    margin-top: 1rem; /* Space above link */
+}
+
+/* Style for the submit button */
+.btn-register {
+    width: 100%; /* Full width button */
+    font-size: 1rem; /* Larger font size for better readability */
+    padding: 0.75rem; /* Padding for better touch target */
+    border-radius: 5px; /* Rounded corners for button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for button */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.btn-register:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
