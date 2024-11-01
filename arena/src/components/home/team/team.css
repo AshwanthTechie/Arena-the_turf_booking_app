@@ -1,0 +1,120 @@
+.team-section .team-box {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid rgb(62 28 131 / 10%);
+  padding: 2rem;
+  transition: 0.5s;
+  width: calc(100% - 40px); /* Adjusting width for shrinking */
+  max-width: 320px; /* Limiting the maximum width */
+  margin: 20px auto; /* Centering the cards */
+}
+.team-section .team-box:hover {
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  cursor: pointer;
+}
+.team-section .team-details {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team-btn3{
+  background-color:#ff6800;
+}
+
+.team-section .team-img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  position: relative;
+}
+.team-section .team-img img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;   
+}
+.team-section .team-img i {
+  color: #108be7;
+  font-size: 17px;
+  position: absolute;
+  top: 35px;
+  right: -10px;
+}
+.team-section .team-img::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 110px;
+  height: 110px;
+  border: 5px solid #edf0f5;
+  border-radius: 50%;
+}
+.team-section label {
+  display: inline-block;
+  margin-top: 20px;
+}
+.team-section i {
+  color: grey;
+  margin-right: 5px;
+}
+.team-section ul {
+  display: inline-block;
+  margin-top: 10px;
+}
+.team-section ul li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  align-items: center;
+  background-color: #f4f5f7;
+  border-radius: 50%;
+  margin: 5px;
+}
+.team-section .team-button {
+  margin-top: 20px;
+  padding-left: 43px;
+}
+.team-section .team-button i {
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .team-section .team-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .team-section .team-box {
+    padding: 1rem;
+  }
+  
+  .team-section .team-img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .team-section .team-img img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .team-section .team-img i {
+    font-size: 15px;
+    top: 25px;
+  }
+  
+  .team-section .team-img::after {
+    width: 90px;
+    height: 90px;
+    top: -10px;
+    left: -10px;
+  }
+  
+  .team-section ul li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}

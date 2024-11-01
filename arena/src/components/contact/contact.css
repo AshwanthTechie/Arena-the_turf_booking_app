@@ -1,0 +1,85 @@
+/* Base styles */
+.contact form div {
+  display: flex;
+}
+.contact textarea {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contact input {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.contact form {
+  padding: 30px;
+}
+.container
+{
+  padding-top: 10px;
+}
+/* Unique banner styles */
+.unique-contact .unique-back {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.unique-contact .unique-back img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.unique-contact .unique-back h1,
+.unique-contact .unique-back p {
+  position: relative;
+  margin: 10px 0;
+  padding: 0 20px;
+  top: -2cm; /* Lifting the text position by 2cm */
+  transform: translateY(-2cm); /* Ensuring it moves upwards by 2cm */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .contact h4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact form div {
+    flex-direction: column;
+  }
+  .contact input {
+    width: 100%;
+  }
+  
+  .unique-contact .unique-back {
+    padding: 10px;
+  }
+  
+  .unique-contact .unique-back h1,
+  .unique-contact .unique-back p {
+    font-size: 18px;
+    top: -1.5cm; /* Adjusted for smaller screens */
+    transform: translateY(-1.5cm); /* Adjusted for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .unique-contact .unique-back h1 {
+    font-size: 16px;
+    top: -1cm; /* Adjusted for smaller screens */
+    transform: translateY(-1cm); /* Adjusted for smaller screens */
+  }
+  
+  .unique-contact .unique-back p {
+    font-size: 14px;
+    top: -1cm; 
+    transform: translateY(-1cm); 
+  }
+}

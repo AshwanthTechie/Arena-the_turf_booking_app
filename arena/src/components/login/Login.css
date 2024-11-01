@@ -1,0 +1,41 @@
+.LogBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%; /* Ensure it covers the full viewport width */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .login {
+    color: black;
+    border-radius: 5px; /* Use px for more predictable results */
+    box-shadow: 0 0 10px rgb(51, 51, 51);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Center the form */
+  }
+  
+  @media (max-width: 600px) {
+    .login {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  }
+  
+  h6 {
+    text-align: center;
+  }
+  
+  /* Ensure that the button is centered on smaller screens */
+  .btn-login {
+    margin: 0 auto;
+  }
+  

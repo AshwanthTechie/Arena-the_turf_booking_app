@@ -1,0 +1,167 @@
+.social-icons {
+  
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff; 
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ee1714; 
+}
+
+.footerContact {
+  background-color: #ee1714;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.footerContact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.footerContact p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #1d2636;
+  padding: 50px 20px;
+  color: #fff;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+footer .logo {
+  text-align: center;
+}
+
+footer img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+footer h2 {
+  font-weight: 500;
+}
+
+footer p {
+  color: grey;
+  margin: 20px 0;
+}
+
+footer .input {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer input {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+footer button.subscribe-btn {
+  padding: 10px;
+  background-color: #ee1714;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  color: grey;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+footer ul li:hover {
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.legal {
+  text-align: center;
+  padding: 20px;
+  background: #1d2636;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn5.unique-btn {
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footerContact .send {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerContact .contact-btn {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .responsive-footer .box {
+    margin: 10px 0;
+  }
+
+  .responsive-footer .logo {
+    margin-bottom: 20px;
+  }
+
+  .responsive-footer .input {
+    flex-direction: column;
+  }
+
+  .responsive-footer .unique-subscribe-btn {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 961px) {
+  footer .container {
+    grid-template-columns: 6fr 2fr 2fr 1fr;
+  }
+}

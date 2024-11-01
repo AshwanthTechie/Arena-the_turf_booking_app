@@ -1,0 +1,100 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 50%;
+}
+
+.bookForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px; /* Limit the max-width to fit within the container */
+  box-shadow: 0 0 10px rgb(51, 51, 51);
+  border-radius: 10px;
+  background-color: #fff;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Allows horizontal scrolling on small screens */
+  box-sizing: border-box;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  width: 100%;
+}
+
+.table-cell {
+  flex: 1 1 20%; /* Adjust the flex-basis to control the minimum width of each cell */
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #ddd; /* Add border to cells */
+}
+
+.table button {
+  width: 100%; /* Make buttons fit their cells */
+  padding: 0.5rem; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+.button-pay {
+  color: white;
+  background-color: #ee1714;
+}
+
+.button-pay:hover {
+  color: #ee1714;
+  background-color: white;
+  border-color: #ee1714;
+}
+
+@media (max-width: 600px) {
+  .button-pay {
+    width: 100%;
+  }
+}
+
+/* BookNow.css */
+
+button {
+margin: 5px;
+}
+
+button:disabled {
+cursor: not-allowed;
+}
+
+.time-slot-container {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+}
+
+.loading-screen-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+

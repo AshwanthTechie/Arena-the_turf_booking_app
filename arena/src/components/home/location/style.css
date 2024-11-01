@@ -1,0 +1,104 @@
+/* General styles for the location section */
+.location-section {
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.location-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  
+}
+
+.location-title {
+  text-align: center;
+ 
+}
+.location-section .heading{
+  padding-bottom: 50px;
+}
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Styles for each box */
+.location-box {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.location-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.location-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(15, 28, 47, 0.3); /* Adjust opacity as needed */
+  color: #fff;
+  z-index: 1;
+}
+
+.location-overlay-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.location-overlay h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.location-overlay p {
+  margin: 0;
+}
+
+.location-overlay label {
+  color: #fff;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .location-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .location-overlay {
+    background: rgba(15, 28, 47, 0.5); /* Adjust opacity as needed */
+  }
+  
+  .location-overlay h5 {
+    font-size: 16px;
+  }
+  
+  .location-overlay label {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .location-overlay h5 {
+    font-size: 14px;
+  }
+  
+  .location-overlay label {
+    margin-right: 5px;
+  }
+}
